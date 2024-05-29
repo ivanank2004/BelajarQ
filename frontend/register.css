@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('loginpage.png');
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, #BFEFFF 0%, #6FC3DF 46.7%, #0077B6 100%);
+    mix-blend-mode: hue;
+    z-index: -1;
+}
+
+.login-container {
+    width: 827.3px;
+    height: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.welcome-section {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(180deg, #BFEFFF 0%, #6FC3DF 50%, #0077B6 100%);
+    margin-right: -20px;
+    z-index: 1;
+}
+
+.welcome-section p {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 51px;
+    color: #F8F8F8;
+}
+
+.login-section {
+        flex: 1;
+        padding: 20px;
+        text-align: left;
+        background: rgba(248, 248, 248, 1);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.login-section p {
+    margin-left: 67.5px;
+    margin-top: 24px;
+    font-size: 16px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-input {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 45px;
+    top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.logo {
+    width: 270px;
+    height: 65.8px;
+    display: block;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 294.6px;
+    height: 45.3px;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-left: 32px;
+}
+
+form label {
+    display: block;
+    font-weight: bold; 
+    margin-left: 32px;
+    margin-bottom: -16px;
+}
+
+span.required {
+    color: red;
+    margin-left: 2px;
+}
+
+input[type="submit"] {
+    width: 294.6px;
+    height: 45.3px;
+    border-radius: 10px;
+    border: 0px;
+    margin-left: 32px;
+    margin-top: 16px;
+    background-color: rgba(4, 124, 202, 0.82);
+    color: white;
+    cursor: pointer;
+    font-weight: 530;
+    font-size: 16px;
+}
+
+.study-image {
+    width: 406.6px;
+    height: 260.6px;
+    left: 350px;
+    top: 354px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+#sign-up-link {
+    color: #0C3DB9;
+}
+
+.role-select {
+    margin-top: 16px;
+}
+
+select {
+    width: 294.6px;
+    height: 45.3px;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    appearance: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px;
+    margin-left: 32px;
+}
+
+.toggle-dropdown {
+    position: absolute;
+    right: 420px;
+    transform: translateY(70%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
