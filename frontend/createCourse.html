@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="createCourse.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Create Course</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="image">
+            <img src="BelajarQ.png" alt="logo">
+        </div>
+        <div class="profile-button">
+            <i class="fa-solid fa-user" onclick="window.location.href='profileTeacher.php';"></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="wrapper">
+            <h1>Create Course</h1>
+            <div class="form-container">
+                <form action="createCourse.php" method="post" enctype="multipart/form-data">
+                    <label for="title">Name your Course<Br></label>
+                    <input type="text" name="title" id="title" required><br><br>
+                    <div class="course-category">
+                        <label for="category">What are you Teaching?<br></label>
+                        <select name="category" id="category" required>
+                            <option value="Maths">Math</option>
+                            <option value="Physics">Physics</option>
+                            <option value="Biology">Biology</option>
+                            <option value="Chemistry">Chemistry</option>
+                        </select><br><br>
+                    </div>
+                    <label for="description">What is this Course about?<br></label>
+                    <textarea name="description" id="description" required></textarea><br><br>
+                    <label for="content">Content</label><br>
+                    <textarea name="content" id="content"></textarea><br>
+                    <div class="upload-container">
+                        <label for="video">Video:</label>
+                        <input type="file" name="video" id="video" accept="video/*" required><br><br>
+                        <label for="thumbnail">Thumbnail:</label>
+                        <input type="file" name="thumbnail" id="thumbnail" accept="image/*" required><br><br>
+                    </div>
+                    <div class="button-container">
+                        <button onclick="window.location.href='dashboardTeacher.php';">Cancel</button>
+                        <input type="submit" name="Create" value="Start your Course">
+                    </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+
+</html>

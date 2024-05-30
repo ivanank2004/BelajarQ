@@ -1,0 +1,134 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3093D2;
+    padding: 10px;
+}
+
+.navbar img {
+    height: 40px;
+    margin-left: 30px;
+}
+
+.navbar .profile-button {
+    font-size: 34px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.navbar .profile-button:hover {
+    color: #262626;
+}
+
+.profile-button {
+    margin-right: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+.container form {
+    margin-left: 50px;
+}
+
+.wrapper {
+    border: 1px solid black;
+    background: #f8f8f8;
+}
+
+.form-container {
+    border: 0.5px solid black;
+    width: 900px;
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px 340px;
+}
+
+.form-container input[type="text"] {
+    margin-top: 5px;
+    width: 350px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form-container select {
+    margin-top: 5px;
+    width: 350px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form-container textarea[id="description"] {
+    margin-top: 5px;
+    width: 750px;
+    height: 70px;
+    resize: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form-container textarea[id="content"] {
+    margin-top: 5px;
+    width: 750px;
+    height: 150px;
+    resize: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.upload-container {
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    font: inherit;
+    font-size: 24px;
+    cursor: pointer;
+    outline: inherit;
+    color: #000000;
+    margin-left: -10px;
+    text-decoration: underline;
+}
+
+.button-container input {
+    background: #3093D2;
+    border: none;
+    border-radius: 5px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    color: #000000;
+    padding: 10px;
+    margin-left: 500px;
+}
+
+.bold {
+    font-weight: bold;
+}
