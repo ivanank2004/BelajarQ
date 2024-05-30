@@ -1,0 +1,100 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3093D2;
+    padding: 10px;
+}
+
+.navbar img {
+    height: 40px;
+    margin-left: 30px;
+}
+
+.navbar .profile-button {
+    font-size: 34px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.navbar .profile-button:hover {
+    color: #262626;
+}
+
+.profile-button {
+    margin-right: 40px;
+}
+
+p {
+    margin-top: 45px;
+    margin-left: 120px;
+    font-size: 34px;;
+}
+
+.create-course {
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.create-course button {
+    background: #f8f8f8;
+    border-radius: 50px;
+    padding: 5px 20px;
+    font: inherit;
+    font-size: 24px;
+    cursor: pointer;
+    outline: inherit;
+    color: #000000;
+}
+
+.your-course {
+    display: flex;
+    margin-top: 45px;
+    margin-left: 120px;
+}
+
+.your-course p {
+    font-size: 34px;
+    margin: 0;
+}
+
+.your-course button {
+    background: none;
+    border: none;
+    font: inherit;
+    font-size: 24px;
+    cursor: pointer;
+    outline: inherit;
+    color: #000000;
+    margin-left: 880px;
+    margin-top: 8px;
+}
+
+.footer {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: 125783;
+    padding: 60px;
+}
+
+.footer h2 {
+    margin: 0 auto;
+    color: black;
+}
+
+.bold {
+    font-weight: bold;
+}

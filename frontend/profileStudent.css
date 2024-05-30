@@ -1,0 +1,114 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3093D2;
+    padding: 10px;
+}
+
+.navbar img {
+    height: 40px;
+    margin-left: 30px;
+}
+
+.navbar .profile-button {
+    font-size: 34px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.navbar .profile-button:hover {
+    color: #262626;
+}
+
+.profile-button {
+    margin-right: 40px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+
+.back-to-dashboard {    
+    background: #f8f8f8;
+    border: 1px solid black;
+    padding: 10px 25px;
+}
+
+.back-to-dashboard button {
+    background: none;
+    border: none;
+    font: inherit;
+    font-size: 24px;
+    cursor: pointer;
+    outline: inherit;
+    color: #000000;
+}
+
+.profile-setting {
+    background: #f8f8f8;
+    border: 1px solid black;
+    padding: 20px 250px;
+}
+
+.profile {
+    background: #f8f8f8;
+    border: 1px solid black;
+    padding: 120px;
+}
+
+.profile p {
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.content {
+    margin-top: -130px;
+    margin-left: -80px;
+    padding: 50px;
+}
+
+button.logout {
+    background: none;
+    border: none;
+    font: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    outline: inherit;
+    color: #000000;
+    margin-top: 10px;
+}
+
+button.edit {
+    background: #3093D2;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 270px;
+    font: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    outline: inherit;
+    color: #000000;
+    margin-top: 10px;
+}

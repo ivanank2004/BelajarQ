@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="editProfileStudent.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Edit Profile</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="image">
+            <img src="BelajarQ.png" alt="logo">
+        </div>
+        <div class="profile-button">
+            <i class="fa-solid fa-user" onclick="window.location.href='profileTeacher.php';"></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="back-to-dashboard">
+            <button onclick="window.location.href='home.php';">Back to <br><span class="bold">Dashboard</span></button>
+        </div>
+        <div class="profile-container">
+            <div class="profile-setting">
+                <h2>Profile Settings</h2>
+            </div>
+            <div class="profile">
+                <div class="content">
+                    <form method="post">
+                        <label for="email">New Email:</label><br>
+                        <input type="email" name="email" id="email" value="" required><br>
+                        <label for="username">New Username:</label><br>
+                        <input type="text" name="username" id="username" value="" required><br>
+                        <label for="password">New Password:</label><br>
+                        <input type="password" name="password" id="password" required><br>
+                        <h3>Select Interests:</h3>
+                        <input type="radio" name="interest" value="">
+                        <label for="interest"></label><br>
+                        <div class="button-container">
+                            <button onclick="window.location.href='profileStudent.php';">Discard Change</button>
+                            <input type="submit" value="Save Change">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
