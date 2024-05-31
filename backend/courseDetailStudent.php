@@ -1,5 +1,5 @@
 <?php
-include ("../database.php");
+include("../database.php");
 session_start();
 
 if (!isset($_SESSION['email'])) {
@@ -31,6 +31,7 @@ $username_row = mysqli_fetch_assoc($username_result);
 $username = $username_row['username'];
 
 $isCurrentUserUploader = ($course_row['uploaded_by'] === $username);
+$isStudent = ($role === 'student');
 
 $category_query = "SELECT category FROM course WHERE id = $course_id";
 $category_result = mysqli_query($conn, $category_query);
@@ -59,10 +60,11 @@ $comments_result = mysqli_query($conn, $comments_query);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="courseDetailTeacher.css">
+    <link rel="stylesheet" href="courseDetailStudent.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Course Details</title>
+    
 </head>
 
 <body>
@@ -97,7 +99,7 @@ $comments_result = mysqli_query($conn, $comments_query);
                 </div>
             </div>
             <div class="button-container">
-                <button id="dashboard" onclick="window.location.href='dashboardTeacher.php';">Back to Dashboard</button>
+                <button id="dashboard" onclick="window.location.href='dashboardStudent.php';">Back to Dashboard</button>
                 <?php if ($isCurrentUserUploader): ?>
                     <form method="post">
                         <button type="submit" name="Delete"
@@ -105,6 +107,10 @@ $comments_result = mysqli_query($conn, $comments_query);
                     </form>
                     <button id="edit"
                         onclick="window.location.href='editCourse.php?course_id=<?php echo htmlspecialchars($course_id); ?>';">Edit</button>
+                <?php endif; ?>
+                <?php if ($isStudent): ?>
+                    <button id="comment"
+                        onclick="window.location.href='addComment.php?course_id=<?php echo htmlspecialchars($course_id); ?>';">Add Comment</button>
                 <?php endif; ?>
             </div>
         </div>
