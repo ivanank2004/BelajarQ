@@ -1,0 +1,137 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3093D2;
+    padding: 10px;
+}
+
+.navbar img {
+    height: 40px;
+    margin-left: 30px;
+}
+
+.navbar .profile-button {
+    font-size: 34px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.navbar .profile-button:hover {
+    color: #262626;
+}
+
+.profile-button {
+    margin-right: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+.wrapper {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.title {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.details-container {
+    text-align: center;
+}
+
+.details-container p {
+    width: 100%;
+    max-width: 710px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.details-container p[id="created"], p[id="category"] {
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: calc(60% - 144px); /* Adjust the width based on margin and padding */
+    padding: 5px;
+    word-wrap: break-word; /* Break long words */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis;
+}
+
+.details-container p[id="description"], p[id="content"] {
+    text-align: left;
+    margin-left: 45px;
+}
+
+.details-container p[id="course-description"], p[id="course-content"] {
+    text-align: left;
+    margin-left: 45px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: calc(100% - 45px);
+    padding: 5px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.video-player {
+    margin-top: 20px;
+    width: 800px;
+}
+
+.button-container {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.button-container button {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+.button-container button[id="dashboard"] {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.button-container button[type="submit"] {
+    background: #CE1515;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.button-container button[id="edit"] {
+    background: #3093D2;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 50px;
+    cursor: pointer;
+}
