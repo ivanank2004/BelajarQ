@@ -119,14 +119,13 @@ h3 {
 }
 
 .footer {
-    margin-top: 80px;
-    position: absolute;
-    bottom: 0;
-    justify-content: space-between;
-    align-items: center;
+    margin-top: 40px;
+    display: flex;
     text-align: center;
-    background-color: #125783;
+    background-color: 125783;
     padding: 60px;
+    width: 100%;
+    bottom: 0;
 }
 
 .footer h2 {
