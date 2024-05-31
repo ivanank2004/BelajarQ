@@ -120,11 +120,12 @@ h3 {
 
 .footer {
     margin-top: 80px;
-    display: flex;
+    position: absolute;
+    bottom: 0;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    background-color: 125783;
+    background-color: #125783;
     padding: 60px;
 }
 
