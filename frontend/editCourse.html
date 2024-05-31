@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="editCourse.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Edit Course</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="image">
+            <img src="BelajarQ.png" alt="logo">
+        </div>
+        <div class="profile-button">
+            <i class="fa-solid fa-user" onclick="window.location.href='profileTeacher.php';"></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="wrapper">
+            <h1>Edit Course</h1>
+            <div class="form-container">
+                <form action="editCourse.php?course_id=<?php echo htmlspecialchars($course_id); ?>" method="post"
+                    enctype="multipart/form-data">
+                    <label for="title">Course Name:</label>
+                    <input type="text" name="title" id="title"><br><br>
+                    <label for="category">Category:</label>
+                    <select name="category" id="category">
+                        <option value="Maths">Maths</option>
+                        <option value="Physics">Physics</option>
+                        <option value="Biology">Biology</option>
+                        <option value="Chemistry">Chemistry</option>
+                    </select><br><br>
+                    <label for="description">Description:</label>
+                    <textarea name="description" id="description"></textarea><br><br>
+                    <label for="content">Content:</label>
+                    <textarea name="content" id="content"></textarea><br><br>
+                    <label for="video">Choose Video:</label>
+                    <input type="file" name="video" id="video" accept="video/*"><br><br>
+                    <label for="thumbnail">Thumbnail:</label>
+                    <input type="file" name="thumbnail" id="thumbnail" accept="image/*"><br><br>
+                    <div class="button-container">
+                        <button type="button" onclick="window.location.href='courseDetailTeacher.php?course_id=<?php echo $course_id; ?>';">Discard Change</button>
+                        <input type="submit" name="Edit" value="Save Changes">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
