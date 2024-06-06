@@ -9,6 +9,7 @@ body {
 }
 
 .navbar {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,13 +41,15 @@ body {
 }
 
 .container {
+    position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 45px;
+    margin-top: -42rem;
 }
 
 
 .back-to-dashboard {    
+    border-radius: 5px;
     background: #f8f8f8;
     border: 1px solid black;
     padding: 10px 25px;
@@ -63,14 +66,16 @@ body {
 }
 
 .profile-setting {
-    background: #f8f8f8;
+    background: #3093D2;
     border: 1px solid black;
+    border-radius: 5px;
     padding: 20px 250px;
 }
 
 .profile {
     background: #f8f8f8;
     border: 1px solid black;
+    border-radius: 5px;
     padding: 120px;
 }
 
@@ -125,4 +130,9 @@ body {
     outline: inherit;
     color: #000000;
     margin-top: 10px;
+}
+
+.background-image img {
+    margin-top: -3rem;
+    width: 100%;
 }
