@@ -42,14 +42,15 @@ p {
 }
 
 .create-course {
-    margin-top: 20px;
+    margin-top: 7rem;
     margin-left: 120px;
 }
 
 .create-course button {
-    background: #f8f8f8;
-    border-radius: 50px;
+    background: #6FC3DF;
+    border-radius: 10px;
     padding: 5px 20px;
+    border: none;
     font: inherit;
     font-size: 24px;
     cursor: pointer;
@@ -59,7 +60,7 @@ p {
 
 .your-course {
     display: flex;
-    margin-top: 45px;
+    margin-top: 3rem;
     margin-left: 120px;
 }
 
@@ -69,8 +70,10 @@ p {
 }
 
 .your-course button {
-    background: none;
+    background: #6FC3DF;
+    padding: 5px 20px;
     border: none;
+    border-radius: 10px;
     font: inherit;
     font-size: 24px;
     cursor: pointer;
@@ -81,14 +84,14 @@ p {
 }
 
 .footer {
-    margin-top: 80px;
-    position: absolute;
-    bottom: 0;
-    justify-content: space-between;
-    align-items: center;
+    margin-top: 26rem;
+    position: relative;
+    display: flex;  
     text-align: center;
-    background-color: #125783;
+    background-color: 125783;
     padding: 60px;
+    width: 100%;
+    bottom: 0;
 }
 
 .footer h2 {
@@ -98,4 +101,45 @@ p {
 
 .bold {
     font-weight: bold;
+}
+
+.background img {
+    margin-left: 63rem;
+    width: 20rem;
+}
+
+
+.background {
+    position: relative;
+    padding: 5px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #6FC3DF;
+}
+
+.layer {
+    margin-top: -5px;   
+    margin-left: -10px;
+    padding: 10px;
+    width: 101%;
+    height: 6%;
+    background: #6FC3DF;
+}
+
+.background-image img {
+    width: 100%;
+    margin-top: -5rem;
+}
+
+.container {
+    position: relative;
+}
+
+.container p[id="teaching"]{
+    position: relative;
+    margin-top: -60rem;
+}
+
+.container p[id="start"] {
+    margin-top: 5rem;
 }

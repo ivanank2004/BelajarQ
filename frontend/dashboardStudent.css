@@ -1,5 +1,7 @@
 body {
     font-family: 'Inter', sans-serif;
+    overflow-wrap: break-word;
+    overflow-y: auto;
 }
 
 * {
@@ -119,8 +121,8 @@ h3 {
 }
 
 .footer {
-    margin-top: 40px;
-    display: flex;
+    position: relative;
+    margin-top: 20rem;
     text-align: center;
     background-color: 125783;
     padding: 60px;
@@ -135,4 +137,44 @@ h3 {
 
 .bold { 
     font-weight: bold;
+}
+
+.background {
+    position: relative;
+    padding: 5px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #6FC3DF;
+}
+
+.background img {
+    margin-left: 800px;
+}
+
+.layer {
+    margin-top: -5px;   
+    margin-left: -10px;
+    padding: 10px;
+    width: 101%;
+    height: 6%;
+    background: #6FC3DF;
+}
+
+.container p[id="learning"] {
+    position: relative;
+    margin-top: -61rem;
+}
+
+.container p[id="body"] {
+    position: relative;
+    margin-top: 5rem;
+}
+
+.find-course {
+    margin-top: 5rem;
+}
+
+.background-image img {
+    width: 100%;
+    margin-top: -5rem;
 }
