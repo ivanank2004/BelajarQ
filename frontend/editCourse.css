@@ -9,6 +9,7 @@ body {
 }
 
 .navbar {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,15 +40,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 45px;
-    margin-bottom: 50px;
 }
 
 .container form {
+    border-radius: 5px;
     margin-left: 50px;
 }
 
 .wrapper {
+    border-radius: 5px;
+    position: relative;
+    margin-top: -45rem;
     border: 1px solid black;
     background: #f8f8f8;
 }
@@ -61,6 +64,8 @@ body {
 h1 {
     text-align: center;
     padding: 10px 340px;
+    background: #3093D2;
+    border-radius: 5px;
 }
 
 .form-container input[type="text"] {
@@ -131,4 +136,26 @@ h1 {
 
 .bold {
     font-weight: bold;
+}
+
+.background-image {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+
+.background-image img {
+    margin-top: -1rem;
+    width: 100%;
+}
+
+.background-image::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(10, 10, 10) 100%);
+    pointer-events: none;
 }

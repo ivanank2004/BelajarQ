@@ -19,6 +19,9 @@
             <i class="fa-solid fa-user" onclick="window.location.href='profileTeacher.php';"></i>
         </div>
     </div>
+    <div class="background-image">
+        <img src="classroom.png" alt="">
+    </div>
     <div class="container">
         <div class="wrapper">
             <div class="details-container">
@@ -44,6 +47,18 @@
                     <button type="submit" name="Delete" onclick="">Delete Course</button>
                 </form>
                 <button id="edit" onclick="window.location.href='editCourse.php?course_id=<?php echo htmlspecialchars($course_id); ?>';">Edit</button>
+            </div>
+            <h2>Comments</h2>
+            <div class="comment-form">
+                <form method="POST" action="">
+                    <textarea name="comment" id="comment"></textarea><br><br>
+                    <input type="submit" name="Add" value="Add Comment">
+                </form>
+            </div>
+            <div class="comments-section">
+                <?php while ($comment_row = mysqli_fetch_assoc($comments_result)): ?>
+                    <p>tes</p>
+                    <p>tes</p>
             </div>
         </div>
     </div>
