@@ -9,6 +9,7 @@ body {
 }
 
 .navbar {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,13 +41,15 @@ body {
 }
 
 .container {
+    position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 45px;
+    margin-top: -40rem;
 }
 
 
-.back-to-dashboard {    
+.back-to-dashboard { 
+    border-radius: 5px;   
     background: #f8f8f8;
     border: 1px solid black;
     padding: 10px 25px;
@@ -63,12 +66,14 @@ body {
 }
 
 .profile-setting {
-    background: #f8f8f8;
+    border-radius: 5px;
+    background: #3093D2;
     border: 1px solid black;
     padding: 20px 250px;
 }
 
 .profile {
+    border-radius: 5px;
     background: #f8f8f8;
     border: 1px solid black;
     padding: 120px;
@@ -112,4 +117,9 @@ button.edit {
     outline: inherit;
     color: #000000;
     margin-top: 10px;
+}
+
+.background-image img {
+    width: 100%;
+    margin-top: -5rem;
 }
