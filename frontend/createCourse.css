@@ -9,6 +9,7 @@ body {
 }
 
 .navbar {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,8 +40,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 45px;
-    margin-bottom: 50px;
 }
 
 .container form {
@@ -48,8 +47,11 @@ body {
 }
 
 .wrapper {
+    position: relative;
+    border-radius: 5px;
     border: 1px solid black;
     background: #f8f8f8;
+    margin-top: -44rem;
 }
 
 .form-container {
@@ -59,6 +61,7 @@ body {
 }
 
 h1 {
+    background: #3093D2;
     text-align: center;
     padding: 10px 340px;
 }
@@ -131,4 +134,9 @@ h1 {
 
 .bold {
     font-weight: bold;
+}
+
+.background-image img {
+    margin-top: -3rem;
+    width: 100%;
 }
